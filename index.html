@@ -16,6 +16,12 @@
         .font-helvetica {
             font-family: 'Helvetica', sans-serif;
         }
+        .slide{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: 1s;
+        }
     </style>
 </head>
 
@@ -123,8 +129,8 @@
             <div class="text-2xl font-bold mb-4">Schedule</div>
             <div class="flex justify-center">
                 <table class="border-collapse border border-gray-300">
-                  <thead>
-                    <tr class="bg-gray-200">
+                    <thead>
+                        <tr class="bg-gray-200">
                       <th class="border border-gray-300 p-2">Time</th>
                       <th class="border border-gray-300 p-2">Day 1</th>
                       <th class="border border-gray-300 p-2">Day 2</th>
@@ -199,6 +205,23 @@
         <section id="gallery" class="py-8">
             <div class="text-2xl font-bold mb-4">Gallery</div>
             <!-- Gallery content goes here -->
+            <div id="gallery-container">
+                <div id="section-header">
+                    <p class="text-1.8xl flex justify-center font-semibold">Check our gallery from the recent events</p>
+                </div>
+                <div id="image-contianer" class="w-3/5 h-96 shadow-xl mt-5 relative overflow-hidden" style="margin-left: 20%">
+                    <img src="images/dance-img.jpeg" alt="image" class="slide" width="350" height="170">
+                    <img src="images/music-img.jpeg" alt="image" class="slide" width="350" height="170">
+                    <img src="images/faculties-img.jpg" alt="image" class="slide" width="350" height="170">
+                    <img src="images/dance-img.jpeg" alt="image" class="slide" width="350" height="170">
+                </div>
+                <div class="button-section flex justify-center mt-5 gap-1">
+                         <button class="text-1.5xl px-1" onclick="goPrev()" style="border: 1px solid black;">Prev</button>
+                         <button class="text-1.5xl px-1" onclick="goNext()" style="border: 1px solid black;">Next</button>
+                </div>
+            </div>
+            
+            
         </section>
 
         <section id="venue" class="py-8">
@@ -222,6 +245,7 @@
             &copy; 2023 Abhinandan | SVVV University
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
