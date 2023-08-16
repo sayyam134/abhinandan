@@ -5,11 +5,18 @@ slides.forEach(
      slide.style.left = `${index * 100}%`;
     }
 )
+
 function goNext(){
+    if(counter >= slides.length-1){
+        return;
+    }
     counter++;
     slideImage();
 }
 function goPrev(){
+    if(counter < 0){
+        return;
+    }
     counter--;
     slideImage();
 }
