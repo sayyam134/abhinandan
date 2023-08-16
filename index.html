@@ -9,6 +9,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Futura&display=swap');
 
+        html {
+            scroll-behavior: smooth;
+            scroll-snap-type: y mandatory;
+            scroll-snap-stop: always;
+            scroll-padding-top: 80px;
+            /* Adjust this value based on your layout */
+        }
+
         body {
             font-family: 'Futura', sans-serif;
         }
@@ -24,6 +32,7 @@
             transition: 1s;
         }
     </style>
+
 </head>
 
 <body class="bg-gray-100">
@@ -83,9 +92,7 @@
                                 </strong>
                             </p>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
@@ -98,7 +105,8 @@
             <div class="flex justify-between">
                 <div id="dance-img" class="border-4 border-black p-2">
                     <img src="images/dance-img.jpeg" alt="svvv-dance" width="550" height="170">
-                    <p class="font-light text-lg text-center font-helvectica">Dance performance by Natraj club of svvvv</p>
+                    <p class="font-light text-lg text-center font-helvectica">Dance performance by Natraj club of svvvv
+                    </p>
                 </div>
                 <div id="music-img" class="border-4 border-black p-2">
                     <img src="images/dance-img.jpeg" alt="svvv-music" width="550" height="170">
@@ -107,7 +115,8 @@
             </div>
             <!-- center third image -->
             <div class="mt-5 border-4 border-black p-2 mx-96">
-                <img id="motivational-talks" src="images/dance-img.jpeg" alt="Motivational-talks" width="550" height="170">
+                <img id="motivational-talks" src="images/dance-img.jpeg" alt="Motivational-talks" width="550"
+                    height="170">
                 <p class="font-light text-lg text-center font-helvectica">Motivational talks</p>
             </div>
             <!-- last two images -->
@@ -227,10 +236,12 @@
         </section>
 
         <section id="contact" class="py-8">
-            <div class="text-2xl font-bold mb-7 text-center font-helvetica border-b-4 border-black pb-3 ">Contact Us</div>
+            <div class="text-2xl font-bold mb-7 text-center font-helvetica border-b-4 border-black pb-3 ">Contact Us
+            </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
                 <!-- Team Member 1 -->
-                <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
+                <div
+                    class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
                     <img src="images/Motivational-talks-img.jpeg" alt="Team Member 1"
                         class="w-32 h-32 mx-auto rounded-full mb-2">
                     <h3 class="text-xl font-semibold mb-1">John Doe</h3>
@@ -238,7 +249,8 @@
                 </div>
 
                 <!-- Team Member 2 -->
-                <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
+                <div
+                    class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
                     <img src="images/Motivational-talks-img.jpeg" alt="Team Member 2"
                         class="w-32 h-32 mx-auto rounded-full mb-2">
                     <h3 class="text-xl font-semibold mb-1">Jane Smith</h3>
@@ -246,7 +258,8 @@
                 </div>
 
                 <!-- Team Member 3 -->
-                <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
+                <div
+                    class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
                     <img src="images/Motivational-talks-img.jpeg" alt="Team Member 3"
                         class="w-32 h-32 mx-auto rounded-full mb-2">
                     <h3 class="text-xl font-semibold mb-1">Alex Johnson</h3>
@@ -254,7 +267,8 @@
                 </div>
 
                 <!-- Team Member 4 -->
-                <div class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
+                <div
+                    class="bg-white p-4 rounded-lg shadow hover:scale-105 hover:bg-black hover:text-white cursor-pointer transform transition-transform duration-500">
                     <img src="images/Motivational-talks-img.jpeg" alt="Team Member 4"
                         class="w-32 h-32 mx-auto rounded-full mb-2">
                     <h3 class="text-xl font-semibold mb-1">Emily Brown</h3>
